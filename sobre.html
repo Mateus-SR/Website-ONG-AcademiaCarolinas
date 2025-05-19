@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia Carolina - Sobre</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+          <img src="img/Logo_Carolinas.png" alt="Logo">
+        </a>
+      <div class="menu-icon" onclick="openMenu()"><i class="fa fa-bars"></i></div>
+      <ul class="ul">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="inscricoes.html">Inscrições</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <div class="close-icon" onclick="closeMenu()"><i class="fa fa-times"></i></div>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">Quem somos</h1>
+    <section class="about-section">
+      <img src="img/sobre1.jpg" alt="ONG em ação">
+      <div class="texto">
+        <p>A Academia Carolina é uma organização não-governamental dedicada a promover a educação, cultura e inclusão social por meio de atividades comunitárias, cursos gratuitos e oficinas para todas as idades. Atuamos com transparência, compromisso e muito amor.</p>
+        <p>Nossa missão é transformar vidas através do conhecimento, do acesso à cultura e da prática do bem coletivo.</p>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="texto">
+        <p>Desde 2010, já impactamos milhares de pessoas em diversas comunidades por meio de parcerias com escolas, instituições culturais e voluntários dedicados. Estamos localizados na Zona Leste de São Paulo, e contamos com um espaço acolhedor para todos.</p>
+        <p>Quer conhecer mais? Visite-nos ou entre em contato para agendar uma visita!</p>
+      </div>
+      <img src="img/sobre2.jpg" alt="Projeto social da ONG">
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <p>Academia Carolina - Transformando vidas desde 2010</p>
+  </footer>
+
+  <script>
+    let ul = document.querySelector('nav .ul');
+
+    function openMenu() {
+      ul.classList.add('open');
+    }
+
+    function closeMenu() {
+      ul.classList.remove('open');
+    }
+  </script>
+</body>
+
+</html>
