@@ -31,7 +31,7 @@ header {
   animation: animate-outline 1s ease-out infinite;
 }
 .btn:hover {
-  background-color: #c45f00;
+  background-color: #d70c13;
 }
 @keyframes animate-outline {
   from{
@@ -155,6 +155,7 @@ a{
   transition: transform 0.3s;
 }
 
+
 span{
   position: absolute;
   top: 0;
@@ -165,6 +166,7 @@ span{
    border-radius: 5px;
    transition: all 0.3s;
 }
+
 
 .fa-brands {
   display: flex;
