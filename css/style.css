@@ -11,7 +11,7 @@
   box-sizing: border-box;
   /*  É só um teste, por enquanto
       Mas isso aqui faz tudo aparecer com um fadein, TUDO, e não apenas algumas coisas
-      É bem interessante, mas deve ser usado com cuidado
+      É bem interessante, mas deve ser usado com cuidado:
   animation: fadeIn 2s ease;
   */
 }
@@ -284,19 +284,6 @@ a:hover .text {
   height: 75px;
   display: inline-block;
   margin: 0 50px;
-}
-
-/* Responsividade para dispositivos móveis */
-@media (max-width: 765px) {
-  nav ul {
-    flex-direction: column;
-    display: none;
-  }
-
-  nav .menu-icon,
-  nav .close-icon {
-    display: block;
-  }
 }
 
 /* Estilos do rodapé */
