@@ -7,7 +7,7 @@
 /* Estilo do corpo */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Comfortaa;
   background-color: #fff;
   color: #333;
 }
@@ -86,10 +86,18 @@ nav a {
 /* Seção 'Sobre' */
 .about-section {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  flex-wrap: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  
+  text-align: justify;
+  font-size: 20px;
+  text-indent: 50px;
+  line-height: 1.4;
+
+  gap: 30px;
+  width: 100%;
+  
   animation: fadeInUp 2s ease;
 }
 
