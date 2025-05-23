@@ -1,7 +1,19 @@
+/*
+  Existem algumas redundancias aqui, por exemplo, dois footers identicos
+  e 3 animações de fade in (quase) identicas, também
+
+  Por mais legal que a animação especial dos icones seja, ela ocupa muito
+  espaço (de codigo). Devemos fazer algo para organizar isso
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*  É só um teste, por enquanto
+      Mas isso aqui faz tudo aparecer com um fadein, TUDO, e não apenas algumas coisas
+      É bem interessante, mas deve ser usado com cuidado
+  animation: fadeIn 2s ease;
+  */
 }
 
 /* Estilo do corpo */
@@ -384,11 +396,12 @@ section {
 }
 
 /* Animações específicas */
+/*
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
+*/
 /* Estilos adicionais para o menu (Mobile) */
 .menu-icon {
   font-size: 30px;
