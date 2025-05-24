@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
-@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+@import url('https://fonts.googleapis.com/css?family=ABeeZee');
 
 /*
   Existem algumas redundancias aqui, por exemplo, dois footers identicos
@@ -22,7 +22,7 @@
 /* Estilo do corpo */
 body {
   margin: 0;
-  font-family: Comfortaa;
+  font-family: 'Comfortaa';
   background-color: #fff;
   color: #333;
 }
@@ -443,6 +443,8 @@ nav ul {
   align-items: center;
 }
 
+
+
 .container-cardapio-solo {
   display: flex;
   justify-content: space-evenly;
@@ -450,25 +452,32 @@ nav ul {
   flex-wrap: wrap;
   flex-direction: row;
   align-content: space-between;
+  align-items: flex-start;
   padding: 0px 50px 50px 50px;
   gap:50px;
 }
 
-.container-item {
-  display: flex;
-  width: 600px;
-  flex: 0 0 25%;
-  flex-direction: column;
-  align-content: space-between;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid black;
-  transition: all 0.3s ease;
-  padding: 20px 20px 20px 20px;
+.container-cardapio-titulo {
+  font-family: 'ABeeZee';
+  font-size: 24px;
 }
 
+.container-item {
+  display: flex;
+  text-align: justify;
+  width: 600px;
+  height: 300px;
+  flex: 0 0 25%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border: 2px solid black;
+  padding: 20px 20px 20px 20px;
+  transition: all 0.3s ease;
+}
+
+/*  Arrumar o texto que se auto ajusta ao tamanho da div  */
 .container-item:hover {
-  width: 700px;
   flex: 0 0 30%;
   transition: all 0.1s ease;
 }
