@@ -462,11 +462,13 @@ nav ul {
   align-content: space-between;
   justify-content: center;
   align-items: center;
-  transition: all 0.8s ease;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+  padding: 20px 20px 20px 20px;
 }
 
 .container-item:hover {
-  scale: 1.05;
-  flex: 0 0 50%;
-  transition: all 0.2s ease;
+  width: 700px;
+  flex: 0 0 30%;
+  transition: all 0.1s ease;
 }
