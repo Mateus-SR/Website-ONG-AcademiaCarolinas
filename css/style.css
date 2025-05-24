@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+
 /*
   Existem algumas redundancias aqui, por exemplo, dois footers identicos
   e 3 animações de fade in (quase) identicas, também
@@ -431,13 +434,39 @@ nav ul {
 */
 
 .container-cardapio-geral {
-  
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-cardapio-solo {
-  
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
+  padding: 0px 50px 50px 50px;
+  gap:50px;
 }
 
 .container-item {
-  
+  display: flex;
+  width: 600px;
+  flex: 0 0 25%;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease;
+}
+
+.container-item:hover {
+  scale: 1.05;
+  flex: 0 0 50%;
+  transition: all 0.2s ease;
 }
