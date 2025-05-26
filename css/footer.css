@@ -11,9 +11,9 @@ footer {
   <footer class="footer">
     <div class="container">
       <div class="social-icons">
-        <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="icon tiktok"><i class="fab fa-tiktok"></i></a>
+        <.b href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></.b>
+        <.b href="#" class="icon instagram"><i class="fab fa-instagram"></i></.b>
+        <.b href="#" class="icon tiktok"><i class="fab fa-tiktok"></i></.b>
       </div>
       <p>Desenvolvido por Academia Carolina</p>
     </div>
@@ -21,7 +21,7 @@ footer {
 */
 
 /* Ícones de redes sociais no footer */
-.social-icons a {
+.social-icons .b {
     color: white;
     margin: 0 10px;
     font-size: 24px;
@@ -29,7 +29,7 @@ footer {
     transition: transform 0.3s;
   }
   
-.social-icons a:hover {
+.social-icons .b:hover {
     transform: scale(1.2);
 }
 
@@ -50,13 +50,13 @@ footer .icons {
     margin-bottom: 15px;
 }
   
-footer .icons a {
+footer .icons .b {
     color: white;
     font-size: 24px;
     transition: transform 0.3s;
 }
   
-footer .icons a:hover {
+footer .icons .b:hover {
     transform: scale(1.2);
     color: #000;
 }
@@ -84,65 +84,65 @@ span{
   }
   
   
-  a:nth-child(1) span,
-  a:nth-child(1) .text {
+  .b:nth-child(1) span,
+  .b:nth-child(1) .text {
     color: #ff0050;
     border-color: #ff0050;
   }
   
-  a:nth-child(2) span,
-  a:nth-child(2) .text {
+  .b:nth-child(2) span,
+  .b:nth-child(2) .text {
     color: #e1306c;
     border-color: #e1306c;
   }
   
-  a:nth-child(3) span,
-  a:nth-child(3) .text {
+  .b:nth-child(3) span,
+  .b:nth-child(3) .text {
     color: #1dcaff;
     border-color: #1dcaff;
   }
   
-  a:hover .layer{
+  .b:hover .layer{
     transform: rotate(-35deg) skew(20deg);
   }
   
-  a:hover span:nth-child(1) {
+  .b:hover span:nth-child(1) {
     opacity: 0.2;
   }
   
-  a:hover span:nth-child(2) {
+  .b:hover span:nth-child(2) {
     opacity: 0.4;
     transform: translate(5px, -5px);
   }
   
-  a:hover span:nth-child(3) {
+  .b:hover span:nth-child(3) {
     opacity: 0.6;
     transform: translate(10px, -10px);
   }
   
-  a:hover span:nth-child(4) {
+  .b:hover span:nth-child(4) {
     opacity: 0.8;
     transform: translate(15px, -15px);
   }
   
-  a:hover span:nth-child(5) {
+  .b:hover span:nth-child(5) {
     opacity: 1;
     transform: translate(20px, -20px);
   }
   
-  a:hover:nth-child(1) span {
+  .b:hover:nth-child(1) span {
     box-shadow: -1px 1px 3px #ff0050;
   }
   
-  a:hover:nth-child(2) span {
+  .b:hover:nth-child(2) span {
     box-shadow: -1px 1px 3px #e1306c;
   }
   
-  a:hover:nth-child(3) span {
+  .b:hover:nth-child(3) span {
     box-shadow: -1px 1px 3px #1dcaff;
   }
   
-  a:hover .text {
+  .b:hover .text {
     bottom: -35px;
     opacity: 1;
   }
@@ -151,8 +151,28 @@ span{
     flex-direction: row;
   }
 
+ 
+/*  Esse aqui é usado como classe geral pelo footer?  */
+.b{
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  margin: 0 50px;
+} 
 
+/*  Classe ainda não documentada, mas usada */
+.layer {
   
+  align-items: center;
+  text-justify: auto;
+  justify-content: center;
+  flex-direction: column;
+  width: 75px;
+  height: 75px;
+  transition: transform 0.3s;
+}
+
+
 /*  Classe usada para animação do texto do footer  */
 .text {
     position: absolute;
