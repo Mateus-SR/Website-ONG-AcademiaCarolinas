@@ -26,24 +26,11 @@ body {
   color: #333;
 }
 
-/* Estilo do header */
-header {
-  background-color: #ff7f00; /* Cor principal laranja */
-  color: white;
-  padding: 20px 0;
-  position: relative;
-}
 
 h1, h2, h3 {
   color: #ff7f00;
 }
 
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
 
 
 
@@ -151,12 +138,6 @@ img:hover {
   transform: scale(1.03);
 }
 
-.logo {
-position: relative;
-height: 150px;
-width: 150px;
-}
-
 
 
 /*  Containers do menu "Cardapio"
@@ -185,13 +166,20 @@ width: 150px;
   font-family: 'ABeeZee';
   font-size: 24px;
   text-align: center;
-  color: #ff7b00;
+  font-weight: bolder;
+  color: white;
   transition: color 0.3s ease;
+  background-color: #ff7b00;
+  border-radius: 10px;
+
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 20px;
 }
 
 .container-item:hover .container-cardapio-titulo {
-  color: #d70c13;
-  transition: color 1s ease;
+  background-color: #d70c13;
+  transition: background-color 1s ease;
 }
 
 .container-item {
@@ -237,6 +225,9 @@ width: 150px;
   z-index: 1;
   cursor: pointer;
 }
+
+
+
 
 
 /* Animações */
