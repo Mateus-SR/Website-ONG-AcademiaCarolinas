@@ -1,3 +1,23 @@
+/* Estilos adicionais para o menu (Mobile) */
+.menu-icon {
+    font-size: 30px;
+    display: block;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .close-icon {
+    font-size: 30px;
+    display: block;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -42,4 +62,15 @@ nav ul.open {
     display: none;
     z-index: 999;
   }
-  
+
+@media (max-width: 765px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav .menu-icon,
+  nav .close-icon {
+    display: block;
+  }
+}

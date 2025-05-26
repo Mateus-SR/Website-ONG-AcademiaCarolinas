@@ -14,25 +14,30 @@
   <link rel="stylesheet" href="css/footer.css">
 
 
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="index.html" class="logo">
+  <!-- Header com menu responsivo -->
+  <header class="header">
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">
           <img src="img/Logo_Carolinas.png" alt="Logo">
         </a>
-      <div class="menu-icon" onclick="openMenu()"><i class="fa fa-bars"></i></div>
-      <ul class="ul">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="inscricoes.html">Inscrições</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <div class="close-icon" onclick="closeMenu()"><i class="fa fa-times"></i></div>
-      </ul>
-    </nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="inscricoes.html">Inscrições</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li class="close-icon" onclick="closeMenu()"><i class="fa fa-times"></i></li>
+        </ul>
+        <div class="menu-icon" onclick="openMenu()">
+          <i class="fa fa-bars"></i>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="container">
@@ -56,26 +61,56 @@
     </section>
   </main>
 
-  <footer>
-    <div class="social-icons">
-      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
-    </div>
-    <p>Academia Carolina - Transformando vidas desde 2010</p>
-  </footer>
 
-  <script>
-    let ul = document.querySelector('nav .ul');
 
-    function openMenu() {
-      ul.classList.add('open');
-    }
 
-    function closeMenu() {
-      ul.classList.remove('open');
-    }
-  </script>
-</body>
 
-</html>
+  <!-- Rodapé simples 
+      (está comentando no footer.css)-->
+
+
+
+
+<!--  Rodapé mais robusto
+
+      Essa quantidade absurda de span serve para que a animação legal funcione do jeito certo
+      (cada span é uma "borda")-->
+      <footer class="footer">
+        <div class="icons">
+          <a class="b" href="https://www.tiktok.com/@jornal.etecabh?_t=8ohPkYfsYr7&_r=1">
+              <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>  
+                <span class="fa-brands fa-tiktok"></span>
+              </div>
+              <div class="text">Tiktok</div>
+          </a>
+          <a class="b" href="https://www.instagram.com/etecabh?igsh=OXZ2MHNhdWd6Z2hq">
+              <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> 
+                <span class="fa-brands fa-instagram"></span>
+              </div>
+              <div class="text">Instagram</div>
+          </a>
+          <a class="b" href="https://www.facebook.com/etechemeritas?mibextid=ZbWKwL">
+              <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>  
+                <span class="fa-brands fa-facebook"></span>
+              </div>
+              <div class="text">Facebook</div>
+          </a>
+      </div>
+      <p>Desenvolvido por Geppetto Company Ltda.</p>
+      </footer>
+      <script src="js/main.js"></script>
+    </body>
+    </html>
+    

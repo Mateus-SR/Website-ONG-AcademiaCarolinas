@@ -11,39 +11,39 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/form.css">
 
-  
-  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
 </head>
+
 <body>
-  <!-- Header -->
-  <header style="background-image: url('img/backgroundHome.png')">
+  <!-- Header com menu responsivo -->
+  <header class="header">
     <div class="container">
       <nav>
         <a href="index.html" class="logo">
           <img src="img/Logo_Carolinas.png" alt="Logo">
         </a>
-        <ul class="ul">
-          <a href="index.html">Home</a>
-          <a href="sobre.html">Sobre</a>
-          <a href="inscricoes.html">Inscrições</a>
-          <a class="btn" href="contato.html">Contato</a>
-          <div class="close-icon">
-            <i class="fa fa-times-circle"></i>
-          </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="inscricoes.html">Inscrições</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li class="close-icon" onclick="closeMenu()"><i class="fa fa-times"></i></li>
         </ul>
         <div class="menu-icon" onclick="openMenu()">
           <i class="fa fa-bars"></i>
         </div>
       </nav>
-      <section class="banner animate">
-        <div class="banner-text">
-          <h1>Fale Conosco</h1>
-          <p>Estamos prontos para ouvir você!</p>
-        </div>
-      </section>
     </div>
   </header>
+
+<!--  Para fazer:
+        Trazer de volta a mensagem de "Estamos prontos para te ouvir" -->
+
 
   <!-- Contato -->
   <section class="container animate">
@@ -73,34 +73,56 @@
     </form>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="icons">
-      <a class="b" href="https://www.tiktok.com/@academiacarolina">
-        <div class="layer">
-          <span></span><span></span><span></span><span></span>
-          <span class="fa-brands fa-tiktok"></span>
-        </div>
-        <div class="text">TikTok</div>
-      </a>
-      <a class="b" href="https://www.instagram.com/academiacarolina">
-        <div class="layer">
-          <span></span><span></span><span></span><span></span>
-          <span class="fa-brands fa-instagram"></span>
-        </div>
-        <div class="text">Instagram</div>
-      </a>
-      <a class="b" href="https://www.facebook.com/academiacarolina">
-        <div class="layer">
-          <span></span><span></span><span></span><span></span>
-          <span class="fa-brands fa-facebook"></span>
-        </div>
-        <div class="text">Facebook</div>
-      </a>
-    </div>
-    <p>desenvolvido por 3º Jogos Digitais</p>
-  </footer>
 
-  <script src="js/main.js"></script>
-</body>
-</html>
+
+
+
+  <!-- Rodapé simples 
+      (está comentando no footer.css)-->
+
+
+
+
+<!--  Rodapé mais robusto
+
+      Essa quantidade absurda de span serve para que a animação legal funcione do jeito certo
+      (cada span é uma "borda")-->
+      <footer class="footer">
+        <div class="icons">
+          <a class="b" href="https://www.tiktok.com/@jornal.etecabh?_t=8ohPkYfsYr7&_r=1">
+              <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>  
+                <span class="fa-brands fa-tiktok"></span>
+              </div>
+              <div class="text">Tiktok</div>
+          </a>
+          <a class="b" href="https://www.instagram.com/etecabh?igsh=OXZ2MHNhdWd6Z2hq">
+              <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> 
+                <span class="fa-brands fa-instagram"></span>
+              </div>
+              <div class="text">Instagram</div>
+          </a>
+          <a class="b" href="https://www.facebook.com/etechemeritas?mibextid=ZbWKwL">
+              <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>  
+                <span class="fa-brands fa-facebook"></span>
+              </div>
+              <div class="text">Facebook</div>
+          </a>
+      </div>
+      <p>Desenvolvido por Geppetto Company Ltda.</p>
+      </footer>
+      <script src="js/main.js"></script>
+    </body>
+    </html>
+    

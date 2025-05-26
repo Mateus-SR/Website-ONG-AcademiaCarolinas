@@ -1,15 +1,5 @@
 /* Responsividade para dispositivos móveis */
 @media (max-width: 765px) {
-    nav ul {
-      flex-direction: column;
-      display: none;
-    }
-  
-    nav .menu-icon,
-    nav .close-icon {
-      display: block;
-    }
-
 
 /* Seção 'Sobre' */
 .about-section {

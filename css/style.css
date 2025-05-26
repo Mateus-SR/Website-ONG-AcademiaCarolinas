@@ -93,7 +93,7 @@ section {
 
 
 
-/*  Muita coisa nas animações do footer usam, mas acho que não essa estilização (há de se averiguar)  */
+/*  Muita coisa nas animações do footer usam  */
 a{
   color: #fff;
   margin: 0 35px;
@@ -159,24 +159,6 @@ Parece que não tem nada usando essas classes, também  */
 
 
 
-/*  Essa classe (text) é mencionada no CSS do footer, mas nunca no HTML  */
-.text {
-  position: absolute;
-  left: 50%;
-  bottom: -5px;
-  font-weight: 500;
-  transform: translateX(-50%);
-  transition: 
-  bottom 0.3s ease,
-  opacity 0.3s ease;
-}
-
-.text {
-  opacity: 0;
-}
-
-
-
 /*  Estilo das imagens
     Tudo quanto é imagem tem animação */
 img {
@@ -194,26 +176,6 @@ img:hover {
 position: relative;
 height: 150px;
 width: 150px;
-}
-
-
-
-/* Estilos adicionais para o menu (Mobile) */
-.menu-icon {
-  font-size: 30px;
-  display: block;
-  cursor: pointer;
-  color: white;
-}
-
-.close-icon {
-  font-size: 30px;
-  display: block;
-  cursor: pointer;
-  color: white;
-  position: absolute;
-  top: 20px;
-  right: 20px;
 }
 
 
