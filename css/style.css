@@ -179,21 +179,40 @@ img:hover {
   justify-content: space-between;
   align-items: center;
 
-  width: 300px;
+  min-width: 300px;
   max-width: 100%;
-  height: 300px;
+  min-height: 300px;
   padding: 20px 20px 20px 20px;
 
+  transition: all 0.3s ease;
+}
+
+/*  Apenas um teste 
+#container-item-curso {
+  position: relative;
+
+  display: flex;
+  flex: 1 1 25%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: self-start !important;
+}
+  */
+
+#container-item-borda {
   border: 1px solid #ff7b00;
   border-radius: 6px;
   transition: all 0.3s ease;
 }
 
+#container-item-borda:hover {
+  border: 2px solid hsl(358, 89%, 45%);
+  border-radius: 18px;
+  transition: all 0.1s ease;
+}
 
 .container-item:hover {
   flex: 1 1 32%;
-  border: 2px solid hsl(358, 89%, 45%);
-  border-radius: 18px;
   transition: all 0.1s ease;
 }
 
@@ -212,14 +231,44 @@ img:hover {
   margin-bottom: 20px;
 }
 
+.container-cardapio-subtitulo {
+  font-family: 'ABeeZee';
+  font-size: 18px;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  transition: color 0.3s ease;
+  background-color: #ff7b00;
+  border-radius: 10px;
+
+  width: 40%;
+  padding: 14px 14px 14px 14px;
+  margin-top: 20px;
+}
+
 /*  Podemos ajustar o max-width para se adaptar a telas maiores, no pc  */
-.container-texto {
+.container-texto-menu {
   text-align: justify;
   max-width: 275px;
   min-width: 275px;
   height: 75%;
 }
 
+.container-texto {
+  text-align: justify;
+  max-width: 700px;
+  min-width: 275px;
+  height: 75%;
+  
+  padding: 10px;
+}
+
+.container-imagem {
+  margin-bottom: 30px;
+  border-radius: 0px !important;
+}
+
+/*  Link clicavel (para o cardapio) */
 .link {
   position: absolute;
   top: 0;
@@ -230,8 +279,10 @@ img:hover {
   cursor: pointer;
 }
 
+/*  Uma barra divisoria, para o cardapio  
+      Preicsa de ajustes na centralização */
 .divisor {
-  position: relative;
+  display: flex;
 
   border: 1px dashed #d70c13;
 

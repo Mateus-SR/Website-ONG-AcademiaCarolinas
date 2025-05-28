@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inscrições - Academia Carolina</title>
+  <title>Contato - Academia Carolina</title>
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -14,9 +14,10 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/form.css">
 
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <script src="js/main.js" defer></script>
+
+
+
 </head>
 
 <body>
@@ -41,55 +42,60 @@
     </div>
   </header>
 
-  <!-- Formulário de Inscrição -->
-  <section class="form-section animate">
-    <div class="container">
-      <h2>Inscreva-se nas Atividades</h2>
-      <form action="#" method="post" class="form-box">
-        <label for="nome">Nome completo:</label>
-        <input type="text" id="nome" name="nome" required>
+  <!--  Para fazer:
+        Trazer de volta a mensagem de "Estamos prontos para te ouvir" -->
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+  <!-- Esse aqui é um placeholder por enquanto -->
+  <section class="container-cardapio-geral">
 
-        <label for="atividade">Escolha a Atividade:</label>
-        <select id="atividade" name="atividade" required>
-          <option value="">-- Selecione --</option>
-          <option value="reforco">Reforço Escolar</option>
-          <option value="oficina">Oficina de Arte</option>
-          <option value="esporte">Esporte e Recreação</option>
-        </select>
+    <div class="container-cardapio-solo">
 
-        <button type="submit" class="btn animate-btn">Enviar Inscrição</button>
-      </form>
-    </div>
+      <div class="container-item">
+        <div class="container-cardapio-titulo"><i class="fas fa-book-reader" style="font-size: 30px; margin-right: 20px;"></i>Conheça nossos cursos</div>
+
+        <h1 class="container-cardapio-subtitulo">Curso 1</h1>
+        <p class="container-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim a,
+          delectus dignissimos minima recusandae, quia est animi ut sapiente voluptatem officiis repellat quos
+          excepturi quod magnam odit magni deserunt?</p>
+
+        <h1 class="container-cardapio-subtitulo">Curso 2</h1>
+        <p class="container-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim a,
+          delectus dignissimos minima recusandae, quia est animi ut sapiente voluptatem officiis repellat quos
+          excepturi quod magnam odit magni deserunt?</p>
+
+        <h1 class="container-cardapio-subtitulo">Curso 3</h1>
+        <p class="container-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim a,
+          delectus dignissimos minima recusandae, quia est animi ut sapiente voluptatem officiis repellat quos
+          excepturi quod magnam odit magni deserunt?</p>
+
+      </div>
+
+
+      <div class="divisor"></div>
+
+      <div class="container-item">
+
+        <div class="container-cardapio-titulo"><i class="fa fa-user-circle" style="font-size: 30px; margin-right: 20px;"></i>Inscreva-se em nossas atividades</div>
+
+        <form action="#" method="post" class="form-box">
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="atividade">Escolha a Atividade:</label>
+          <select id="atividade" name="atividade" required>
+            <option value="">-- Selecione --</option>
+            <option value="reforco">Reforço Escolar</option>
+            <option value="oficina">Oficina de Arte</option>
+            <option value="esporte">Esporte e Recreação</option>
+          </select>
+
+          <button type="submit" class="btn animate-btn">Enviar Inscrição</button>
+        </form>
+      </div>
   </section>
-
-  <!-- Formulário para Voluntários -->
-  <section class="form-section animate">
-    <div class="container">
-      <h2>Quero Ser Voluntário</h2>
-      <form action="#" method="post" class="form-box">
-        <label for="nome-vol">Nome completo:</label>
-        <input type="text" id="nome-vol" name="nome-vol" required>
-
-        <label for="email-vol">E-mail:</label>
-        <input type="email" id="email-vol" name="email-vol" required>
-
-        <label for="area">Área de Interesse:</label>
-        <input type="text" id="area" name="area" required>
-
-        <button type="submit" class="btn animate-btn">Quero Participar</button>
-      </form>
-    </div>
-  </section>
-
-
-
-
-  <!-- Rodapé simples 
-      (está comentando no footer.css)-->
-
 
 
 

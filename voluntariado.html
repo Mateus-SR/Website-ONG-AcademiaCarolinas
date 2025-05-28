@@ -50,19 +50,32 @@
 
         <div class="container-cardapio-solo">
             <div class="container-item">
-                <div class="container-cardapio-titulo">Voluntariado</div>
-                <p class="container-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim a,
-                    delectus dignissimos minima recusandae, quia est animi ut sapiente voluptatem officiis repellat quos
-                    excepturi quod magnam odit magni deserunt?</p>
+                <div class="container-cardapio-titulo"><i class="fa fa-users" style="font-size: 30px; margin-right: 20px;"></i>Voluntariado</div>
+                <form action="#" method="post" class="form-box">
+                    <label for="nome-vol">Nome completo:</label>
+                    <input type="text" id="nome-vol" name="nome-vol" required>
+
+                    <label for="email-vol">E-mail:</label>
+                    <input type="email" id="email-vol" name="email-vol" required>
+
+                    <label for="area">Área de Interesse:</label>
+                    <input type="text" id="area" name="area" required>
+
+                    <button type="submit" class="btn animate-btn">Quero Participar</button>
+                </form>
+
+
             </div>
             <div class="divisor"></div>
 
             <div class="container-item">
 
-                <h1 class="container-cardapio-titulo">Doar</h1>
+                <div class="container-cardapio-titulo"><i class="fas fa-hands-helping" style="font-size: 30px; margin-right: 20px;"></i>Doar</div>
+                <img src="img/QR.jpg" class="container-imagem">
                 <p class="container-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim a,
                     delectus dignissimos minima recusandae, quia est animi ut sapiente voluptatem officiis repellat quos
                     excepturi quod magnam odit magni deserunt?</p>
+
             </div>
         </div>
     </section>

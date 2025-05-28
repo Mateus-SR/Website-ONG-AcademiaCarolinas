@@ -29,4 +29,9 @@
   .about-section .text {
     max-width: 600px;
   }
+
+  .divisor {
+    display: none;
+
+  }
 }
