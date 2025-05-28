@@ -36,11 +36,19 @@ footer {
 
 
 /* Estilos do rodapé mais robusto */
+/*
+display: inline;
+position: fixed;
+
+*/
 footer {
-    background-color: #ff7f00;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
+  background-color: #ff7f00;
+  color: white;
+  padding: 40px 20px 40px 20px;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
   
 footer .icons {
