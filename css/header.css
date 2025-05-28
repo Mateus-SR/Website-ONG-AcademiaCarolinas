@@ -1,21 +1,22 @@
 /* Estilo do header */
 header {
-    background-color: #ff7f00; /* Cor principal laranja */
-    color: white;
-    padding: 20px 0;
-    position: relative;
-  }
+  background-color: #ff7f00;
+  /* Cor principal laranja */
+  color: white;
+  padding: 20px 0;
+  position: relative;
+}
 
 
 .container {
-    max-width: 100%;
-    margin: auto;
-    padding: 20px;
-  } 
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+}
 
 
 .logo {
-    position: relative;
-    height: 150px;
-    width: 150px;
-  }
+  position: relative;
+  height: 150px;
+  width: 150px;
+}

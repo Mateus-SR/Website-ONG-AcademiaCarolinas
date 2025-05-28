@@ -27,7 +27,9 @@ body {
 }
 
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #ff7f00;
 }
 
@@ -55,7 +57,7 @@ section {
   flex-wrap: row;
   justify-content: center;
   align-items: flex-start;
-  
+
   text-align: justify;
   font-size: 20px;
   text-indent: 50px;
@@ -63,7 +65,7 @@ section {
 
   gap: 30px;
   width: 100%;
-  
+
   animation: fadeInUp 2s ease;
 }
 
@@ -108,8 +110,8 @@ Nada aqui no FAQ, por enquanto, está utilizado */
 }
 
 /*  Botões  */
-.btn{
-  background-color:#ff7b00;
+.btn {
+  background-color: #ff7b00;
   color: white;
   padding: 15px 20px;
   border-radius: 10px;
@@ -120,6 +122,7 @@ Nada aqui no FAQ, por enquanto, está utilizado */
 .btn.animate-btn {
   animation: animate-outline 1s ease-out infinite;
 }
+
 .btn:hover {
   background-color: #d70c13;
 }
@@ -159,7 +162,7 @@ img:hover {
   margin-top: 20px;
   padding: 0px 50px 50px 50px;
 
-  gap:50px;
+  gap: 50px;
 }
 
 .container-item:hover .container-cardapio-titulo {
@@ -170,7 +173,7 @@ img:hover {
 .container-item {
   position: relative;
 
-  display: flex; 
+  display: flex;
   flex: 1 1 25%;
   flex-direction: column;
   justify-content: space-between;
@@ -187,7 +190,7 @@ img:hover {
 }
 
 
-.container-item:hover{
+.container-item:hover {
   flex: 1 1 32%;
   border: 2px solid hsl(358, 89%, 45%);
   border-radius: 18px;
@@ -240,22 +243,35 @@ img:hover {
 
 /* Animações */
 @keyframes animate-outline {
-  from{
+  from {
     outline: 0px solid #532666;
   }
-  to { 
+
+  to {
     outline: 15px solid #4f9bf900;
   }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*  Animações específicas 

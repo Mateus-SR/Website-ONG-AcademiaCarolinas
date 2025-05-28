@@ -1,67 +1,67 @@
 /* Estilos adicionais para o menu (Mobile) */
 .menu-icon {
-    font-size: 30px;
-    display: block;
-    cursor: pointer;
-    color: white;
-  }
-  
-  .close-icon {
-    font-size: 30px;
-    display: block;
-    cursor: pointer;
-    color: white;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  
-  
+  font-size: 30px;
+  display: block;
+  cursor: pointer;
+  color: white;
+}
+
+.close-icon {
+  font-size: 30px;
+  display: block;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-  }
-  
-  /* Ícones do menu responsivo */
-  nav .menu-icon,
-  nav .close-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-  }
-  
-  /* Links do menu */
-  nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
 
-  
+/* Ícones do menu responsivo */
+nav .menu-icon,
+nav .close-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+/* Links do menu */
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
 nav ul.open {
-    display: flex;
-  }
-  
-  nav ul {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background-color: #ff7f00;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    z-index: 999;
-  }
+  display: flex;
+}
+
+nav ul {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: #ff7f00;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  z-index: 999;
+}
 
 @media (max-width: 765px) {
   nav ul {

@@ -1,28 +1,32 @@
 /* Estilos para os formulários */
-form input, form select, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    transition: border-color 0.3s ease;
-  }
-  
-  form input:focus, form textarea:focus, form select:focus {
-    border-color: #ff7f00;
-    outline: none;
-  }
-  
-  form button {
-    background-color: #ff7f00;
-    border: none;
-    padding: 10px 25px;
-    color: #fff;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  form button:hover {
-    background-color: #e06600;
-  }
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #ff7f00;
+  outline: none;
+}
+
+form button {
+  background-color: #ff7f00;
+  border: none;
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e06600;
+}
