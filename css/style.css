@@ -1,78 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=ABeeZee');
+
+/*
+  Existem algumas redundancias aqui, por exemplo, dois footers identicos
+  e 3 animações de fade in (quase) identicas, também
+
+  Todo código foi levado para um CSS respectivo, para facilitar a manutenção
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*  É só um teste, por enquanto
+      Mas isso aqui faz tudo aparecer com um fadein, TUDO, e não apenas algumas coisas
+      É bem interessante, mas deve ser usado com cuidado:
+  animation: fadeIn 2s ease;
+  */
 }
 
 /* Estilo do corpo */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Comfortaa';
   background-color: #fff;
   color: #333;
 }
 
-/* Estilo do header */
-header {
-  background-color: #ff7f00; /* Cor principal laranja */
-  color: white;
-  padding: 20px 0;
-  position: relative;
-}
-.btn{
-  background-color:#ff7b00;
-  color: white;
-  padding: 15px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.1s;
-}
-.btn.animate-btn {
-  animation: animate-outline 1s ease-out infinite;
-}
-.btn:hover {
-  background-color: #d70c13;
-}
-@keyframes animate-outline {
-  from{
-    outline: 0px solid #532666;
-  }
-  to { 
-    outline: 15px solid #4f9bf900;
-  }
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
+
+h1,
+h2,
+h3 {
+  color: #ff7f00;
 }
 
-/* Ícones do menu responsivo */
-nav .menu-icon,
-nav .close-icon {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-}
 
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
 
-/* Links do menu */
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+/*  Seções com animações
+    Aqui, ele está chamando a animação de FadeIn quando abre a pagina */
+section {
+  padding: 40px 0;
+  animation: fadeIn 1s ease;
 }
 
 /* Título da seção */
@@ -86,10 +54,18 @@ nav a {
 /* Seção 'Sobre' */
 .about-section {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  flex-wrap: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+
+  text-align: justify;
+  font-size: 20px;
+  text-indent: 50px;
+  line-height: 1.4;
+
+  gap: 30px;
+  width: 100%;
+
   animation: fadeInUp 2s ease;
 }
 
@@ -104,39 +80,13 @@ nav a {
   max-width: 600px;
 }
 
-/* Animações */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
 
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 
-/* Estilo do footer */
-footer {
-  background-color: #ff7f00; /* Cor principal laranja */
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-}
+/*  Muita coisa nas animações do footer usam  o "a" 
+    Mas é um problema caso precisar usar links... 
 
-/* Ícones de redes sociais no footer */
-.social-icons a {
-  color: white;
-  margin: 0 10px;
-  font-size: 24px;
-  text-decoration: none;
-  transition: transform 0.3s;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2);
-}
-
-a{
+    (26/05/25) Estou transferindo a tag "a" para a class "b"  */
+.b {
   color: #fff;
   margin: 0 35px;
   text-decoration: none;
@@ -144,201 +94,8 @@ a{
   position: relative;
 }
 
-.layer {
-  
-  align-items: center;
-  text-justify: auto;
-  justify-content: center;
-  flex-direction: column;
-  width: 75px;
-  height: 75px;
-  transition: transform 0.3s;
-}
-
-
-span{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-   border: 1px solid #fff;
-   border-radius: 5px;
-   transition: all 0.3s;
-}
-
-
-.fa-brands {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 35px;
-  line-height: 55px;
-    flex-direction: column;
-}
-
-.text {
-  position: absolute;
-  left: 50%;
-  bottom: -5px;
-  font-weight: 500;
-  transform: translateX(-50%);
-  transition: 
-  bottom 0.3s ease,
-  opacity 0.3s ease;
-}
-
-a:nth-child(1) span,
-a:nth-child(1) .text {
-  color: #ff0050;
-  border-color: #ff0050;
-}
-
-a:nth-child(2) span,
-a:nth-child(2) .text {
-  color: #e1306c;
-  border-color: #e1306c;
-}
-
-a:nth-child(3) span,
-a:nth-child(3) .text {
-  color: #1dcaff;
-  border-color: #1dcaff;
-}
-
-a:hover .layer{
-  transform: rotate(-35deg) skew(20deg);
-}
-
-a:hover span:nth-child(1) {
-  opacity: 0.2;
-}
-
-a:hover span:nth-child(2) {
-  opacity: 0.4;
-  transform: translate(5px, -5px);
-}
-
-a:hover span:nth-child(3) {
-  opacity: 0.6;
-  transform: translate(10px, -10px);
-}
-
-a:hover span:nth-child(4) {
-  opacity: 0.8;
-  transform: translate(15px, -15px);
-}
-
-a:hover span:nth-child(5) {
-  opacity: 1;
-  transform: translate(20px, -20px);
-}
-
-a:hover:nth-child(1) span {
-  box-shadow: -1px 1px 3px #ff0050;
-}
-
-a:hover:nth-child(2) span {
-  box-shadow: -1px 1px 3px #e1306c;
-}
-
-a:hover:nth-child(3) span {
-  box-shadow: -1px 1px 3px #1dcaff;
-}
-
-.text {
-  opacity: 0;
-}
-
-a:hover .text {
-  bottom: -35px;
-  opacity: 1;
-}
-
-.icons{
-  flex-direction: row;
-}
-
-.b{
-  width: 75px;
-  height: 75px;
-  display: inline-block;
-  margin: 0 50px;
-}
-
-/* Responsividade para dispositivos móveis */
-@media (max-width: 765px) {
-  nav ul {
-    flex-direction: column;
-    display: none;
-  }
-
-  nav .menu-icon,
-  nav .close-icon {
-    display: block;
-  }
-}
-
-/* Estilos do rodapé */
-footer {
-  background-color: #ff7f00;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-footer .icons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 15px;
-}
-
-footer .icons a {
-  color: white;
-  font-size: 24px;
-  transition: transform 0.3s;
-}
-
-footer .icons a:hover {
-  transform: scale(1.2);
-  color: #000;
-}
-
-h1, h2, h3 {
-  color: #ff7f00;
-}
-
-/* Estilos para os formulários */
-form input, form select, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  transition: border-color 0.3s ease;
-}
-
-form input:focus, form textarea:focus, form select:focus {
-  border-color: #ff7f00;
-  outline: none;
-}
-
-form button {
-  background-color: #ff7f00;
-  border: none;
-  padding: 10px 25px;
-  color: #fff;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-form button:hover {
-  background-color: #e06600;
-}
-
-/* FAQ */
+/*  FAQ 
+Nada aqui no FAQ, por enquanto, está utilizado */
 .faq details {
   margin-bottom: 10px;
 }
@@ -352,9 +109,29 @@ form button:hover {
   margin: 5px 0 0 15px;
 }
 
-/* Estilo das imagens */
+/*  Botões  */
+.btn {
+  background-color: #ff7b00;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.btn.animate-btn {
+  animation: animate-outline 1s ease-out infinite;
+}
+
+.btn:hover {
+  background-color: #d70c13;
+}
+
+
+/*  Estilo das imagens
+    Tudo quanto é imagem tem animação */
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease;
@@ -363,54 +140,58 @@ img {
 img:hover {
   transform: scale(1.03);
 }
-.logo {
-position: relative;
-height: 150px;
-width: 150px;
+
+/*  Uma barra divisoria, para o cardapio  
+        Precisa de ajustes na centralização */
+.divisor {
+  display: flex;
+
+  border: 1px dashed #d70c13;
+
+  max-height: 100%;
+  height: 300px;
 }
 
-/* Seções com animações */
-section {
-  padding: 40px 0;
-  animation: fadeIn 1s ease;
+
+
+/* Animações */
+@keyframes animate-outline {
+  from {
+    outline: 0px solid #532666;
+  }
+
+  to {
+    outline: 15px solid #4f9bf900;
+  }
 }
 
-/* Animações específicas */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  Animações específicas 
+    Acredito que essa animação esteja duplicada, mas vou manter aqui por segurança */
+/*
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
-/* Estilos adicionais para o menu (Mobile) */
-.menu-icon {
-  font-size: 30px;
-  display: block;
-  cursor: pointer;
-  color: white;
-}
-
-.close-icon {
-  font-size: 30px;
-  display: block;
-  cursor: pointer;
-  color: white;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-nav ul.open {
-  display: flex;
-}
-
-nav ul {
-  position: absolute;
-  top: 70px;
-  left: 0;
-  right: 0;
-  background-color: #ff7f00;
-  flex-direction: column;
-  align-items: center;
-  display: none;
-  z-index: 999;
-}
+*/

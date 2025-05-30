@@ -1,0 +1,36 @@
+/* Responsividade para dispositivos móveis */
+@media (max-width: 765px) {
+
+  /* Seção 'Sobre' */
+  .about-section {
+    display: flex;
+    flex-wrap: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: justify;
+    font-size: 18px;
+    text-indent: 40px;
+    line-height: 1.4;
+
+    gap: 30px;
+    width: 100%;
+
+    animation: fadeInUp 2s ease;
+  }
+
+  .about-section img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-section .text {
+    max-width: 600px;
+  }
+
+  .divisor {
+    display: none;
+  }
+}

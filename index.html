@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Academia Carolina - ONG</title>
+
+
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_mobile.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/container.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
 </head>
+
 <body>
   <!-- Header com menu responsivo -->
   <header class="header">
@@ -16,7 +29,7 @@
           <img src="img/Logo_Carolinas.png" alt="Logo">
         </a>
         <ul class="nav-links" id="navLinks">
-          <li><a href="scroll.html">Início</a></li>
+          <li><a href="index.html">Início</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="inscricoes.html">Inscrições</a></li>
           <li><a href="contato.html">Contato</a></li>
@@ -29,62 +42,99 @@
     </div>
   </header>
 
-  <!-- Banner inicial -->
-  <section class="banner">
-    <div class="container">
-      <h1 class="animate">Bem-vindo à Academia Carolina</h1>
-      <p class="animate">Transformando vidas com educação, cultura e esporte.</p>
-      <a href="sobre.html" class="btn">Saiba Mais</a>
+
+
+
+  <!-- Cardapio -->
+
+  <section class="container-cardapio-geral">
+
+    <div class="container-cardapio-solo">
+      <div class="container-item container-anim-flex" id="container-item-borda">
+        <a href="sobre.html" class="link">
+        </a>
+        <div class="container-cardapio-titulo">Nossa história</div>
+        <p class="container-texto-menu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim a,
+          delectus
+          dignissimos minima recusandae, quia est animi ut sapiente voluptatem officiis repellat quos excepturi quod
+          magnam odit magni deserunt?</p>
+      </div>
+
+
+      <div class="container-item container-anim-flex" id="container-item-borda">
+        <a href="inscricoes.html" class="link">
+        </a>
+        <h1 class="container-cardapio-titulo">Nossos cursos</h1>
+        <p class="container-texto-menu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim a,
+          delectus
+          dignissimos minima recusandae, quia est animi ut sapiente voluptatem officiis repellat quos excepturi quod
+          magnam odit magni deserunt?</p>
+      </div>
+
+
+      <div class="container-item container-anim-flex" id="container-item-borda">
+        <a href="voluntariado.html" class="link">
+        </a>
+        <h1 class="container-cardapio-titulo">Faça parte</h1>
+        <p class="container-texto-menu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim a,
+          delectus
+          dignissimos minima recusandae, quia est animi ut sapiente voluptatem officiis repellat quos excepturi quod
+          magnam odit magni deserunt?</p>
+      </div>
     </div>
   </section>
 
-  <!-- Rodapé -->
-  <footer class="footer">
-    <div class="container">
-      <div class="social-icons">
-        <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="icon tiktok"><i class="fab fa-tiktok"></i></a>
-      </div>
-      <p>Desenvolvido por Academia Carolina</p>
-    </div>
-  </footer>
 
+
+
+  <!-- Rodapé simples 
+      (está comentando no footer.css)-->
+
+
+
+
+  <!--  Rodapé mais robusto
+
+      Essa quantidade absurda de span serve para que a animação legal funcione do jeito certo
+      (cada span é uma "borda")
+      
+      (30/05/25) Removi os links antigos, devemos atualizar eles logo -->
   <footer class="footer">
     <div class="icons">
-      <a class="b" href="https://www.tiktok.com/@jornal.etecabh?_t=8ohPkYfsYr7&_r=1">
-          <div class="layer">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>  
-            <span class="fa-brands fa-tiktok"></span>
-          </div>
-          <div class="text">Tiktok</div>
+      <a class="b" href="index.html">
+        <div class="layer">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="fa-brands fa-tiktok"></span>
+        </div>
+        <div class="text">Tiktok</div>
       </a>
-      <a class="b" href="https://www.instagram.com/etecabh?igsh=OXZ2MHNhdWd6Z2hq">
-          <div class="layer">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span> 
-            <span class="fa-brands fa-instagram"></span>
-          </div>
-          <div class="text">Instagram</div>
+      <a class="b" href="index.html">
+        <div class="layer">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="fa-brands fa-instagram"></span>
+        </div>
+        <div class="text">Instagram</div>
       </a>
-      <a class="b" href="https://www.facebook.com/etechemeritas?mibextid=ZbWKwL">
-          <div class="layer">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>  
-            <span class="fa-brands fa-facebook"></span>
-          </div>
-          <div class="text">Facebook</div>
+      <a class="b" href="index.html">
+        <div class="layer">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="fa-brands fa-facebook"></span>
+        </div>
+        <div class="text">Facebook</div>
       </a>
-  </div>
-  <p>desenvolvido por DSM</p>
+    </div>
+    <p>Desenvolvido por Geppetto Company Ltda.</p>
   </footer>
   <script src="js/main.js"></script>
 </body>
+
 </html>

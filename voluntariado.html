@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Academia Carolina</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_mobile.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+</head>
+
+<body>
+    <!-- Header com menu responsivo -->
+    <header class="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="img/Logo_Carolinas.png" alt="Logo">
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="inscricoes.html">Inscrições</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li class="close-icon" onclick="closeMenu()"><i class="fa fa-times"></i></li>
+                </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--  Para fazer:
+        Trazer de volta a mensagem de "Estamos prontos para te ouvir" -->
+
+    <!-- Esse aqui é um placeholder por enquanto -->
+    <section class="container-cardapio-geral">
+
+        <div class="container-cardapio-solo">
+            <div class="container-item">
+                <div class="container-cardapio-titulo"><i class="fa fa-users"
+                        style="font-size: 30px; margin-right: 20px;"></i>Voluntariado</div>
+                <form action="#" method="post" class="form-box">
+                    <label for="nome-vol">Nome completo:</label>
+                    <input type="text" id="nome-vol" name="nome-vol" required>
+
+                    <label for="email-vol">E-mail:</label>
+                    <input type="email" id="email-vol" name="email-vol" required>
+
+                    <label for="area">Área de Interesse:</label>
+                    <input type="text" id="area" name="area" required>
+
+                    <button type="submit" class="btn animate-btn">Quero Participar</button>
+                </form>
+
+
+            </div>
+            <div class="divisor"></div>
+
+            <div class="container-item container-anim-flex">
+
+                <div class="container-cardapio-titulo"><i class="fas fa-hands-helping"
+                        style="font-size: 30px; margin-right: 20px;"></i>Doar</div>
+                <img src="img/QR PIX ONG.png" class="container-imagem" style="max-width: 20vw;">
+                <p class="container-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim a,
+                    delectus dignissimos minima recusandae, quia est animi ut sapiente voluptatem officiis repellat quos
+                    excepturi quod magnam odit magni deserunt?</p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--  Rodapé mais robusto
+
+      Essa quantidade absurda de span serve para que a animação legal funcione do jeito certo
+      (cada span é uma "borda")-->
+    <footer class="footer">
+        <div class="icons">
+            <a class="b" href="index.html">
+                <div class="layer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa-brands fa-tiktok"></span>
+                </div>
+                <div class="text">Tiktok</div>
+            </a>
+            <a class="b" href="index.html">
+                <div class="layer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa-brands fa-instagram"></span>
+                </div>
+                <div class="text">Instagram</div>
+            </a>
+            <a class="b" href="index.html">
+                <div class="layer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa-brands fa-facebook"></span>
+                </div>
+                <div class="text">Facebook</div>
+            </a>
+        </div>
+        <p>Desenvolvido por Geppetto Company Ltda.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
