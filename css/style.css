@@ -131,7 +131,7 @@ Nada aqui no FAQ, por enquanto, está utilizado */
 /*  Estilo das imagens
     Tudo quanto é imagem tem animação */
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease;
@@ -140,6 +140,18 @@ img {
 img:hover {
   transform: scale(1.03);
 }
+
+/*  Uma barra divisoria, para o cardapio  
+        Precisa de ajustes na centralização */
+.divisor {
+  display: flex;
+
+  border: 1px dashed #d70c13;
+
+  max-height: 100%;
+  height: 300px;
+}
+
 
 
 /* Animações */
