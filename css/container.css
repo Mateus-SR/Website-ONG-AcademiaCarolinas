@@ -36,9 +36,9 @@
   justify-content: flex-start;
   align-items: center;
 
-  min-width: 300px;
-  max-width: 100%;
-  min-height: 300px;
+  min-width: 20em;
+  max-width: 40em;
+  min-height: 18em;
   padding: 20px 20px 20px 20px;
 
   transition: all 0.3s ease;
@@ -106,8 +106,8 @@
 /*  Podemos ajustar o max-width para se adaptar a telas maiores, no pc  */
 .container-texto-menu {
   text-align: justify;
-  max-width: 275px;
-  min-width: 275px;
+  max-width: 20em;
+  min-width: 18em;
   height: 75%;
 }
 

@@ -1,18 +1,23 @@
 // Função para abrir o menu mobile
+// Quando chamado, declara que o menu (tudo que tem "nav ul") está aberto
+// (Adiciona classe "open")
 function openMenu() {
   const ul = document.querySelector('nav ul');
   ul.classList.add('open');
 }
 
 // Função para fechar o menu mobile
+// Quando chamado, declara que o menu (tudo que tem "nav ul") não está aberto
+// (Remove classe "open")
 function closeMenu() {
   const ul = document.querySelector('nav ul');
   ul.classList.remove('open');
 }
 
+
 document.addEventListener('DOMContentLoaded', function () {
-  const closeIcon = document.querySelector('.close-icon');
-  const menuIcon = document.querySelector('.menu-icon');
+  const closeIcon = document.getElementById('closeMenu');
+  const menuIcon = document.getElementById('openMenu');
 
   if (closeIcon) {
     closeIcon.addEventListener('click', closeMenu);
@@ -24,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Animações extras com JS
+// "=>" é só uma forma menor e mais preguiçosa de escrever "function" 
+// (07/06/25) Ainda vou documentar o que isso está fazendo (acredito que nadakkkkk)
 window.addEventListener('scroll', () => {
   const sections = document.querySelectorAll('section');
 
