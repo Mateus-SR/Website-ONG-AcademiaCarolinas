@@ -8,6 +8,34 @@
   margin-top: 20px;
 }
 
+.container-footer-geral {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  padding: 0px 20px 0px 20px;
+}
+
+.container-footer-coluna {
+  display: flex;
+
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  
+  padding: 20px 20px 20px 20px;
+  gap: 10px;
+
+  transition: all 0.3s ease;
+}
+
 .container-cardapio-solo {
   display: flex;
   justify-content: space-evenly;
@@ -36,9 +64,10 @@
   justify-content: flex-start;
   align-items: center;
 
-  min-width: 20em;
+  min-width: 22em;
   max-width: 40em;
-  min-height: 18em;
+  height: 20em;
+
   padding: 20px 20px 20px 20px;
 
   transition: all 0.3s ease;
@@ -56,13 +85,14 @@
   }
     */
 
-#container-item-borda {
+.container-item-borda {
   border: 1px solid #ff7b00;
   border-radius: 6px;
   transition: all 0.3s ease;
+  
 }
 
-#container-item-borda:hover {
+.container-item-borda:hover {
   border: 2px solid hsl(358, 89%, 45%);
   border-radius: 18px;
   transition: all 0.1s ease;
@@ -83,8 +113,10 @@
   background-color: #ff7b00;
   border-radius: 10px;
 
+  white-space: nowrap;
+
   width: 100%;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 27px 20px 27px;
   margin-bottom: 20px;
 }
 
@@ -98,7 +130,7 @@
   background-color: #ff7b00;
   border-radius: 10px;
 
-  width: 40%;
+  min-width: 40%;
   padding: 14px 14px 14px 14px;
   margin-top: 20px;
 }
@@ -107,7 +139,7 @@
 .container-texto-menu {
   text-align: justify;
   max-width: 20em;
-  min-width: 18em;
+  min-width: 19em;
   height: 75%;
 }
 
