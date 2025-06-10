@@ -1,21 +1,12 @@
 /* Estilos adicionais para o menu (Mobile) */
-.menu-icon {
-  font-size: 30px;
-  display: block;
-  cursor: pointer;
-  color: white;
-}
-
-.close-icon {
-  font-size: 30px;
+.menu-icon, .close-icon {
   display: block;
   cursor: pointer;
   color: white;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 1.5em;
+  right: 1.5em;
 }
-
 
 
 nav {
@@ -23,6 +14,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
+  position: relative;
+  top: 0 auto;
 }
 
 /* Ícones do menu responsivo */
@@ -52,25 +45,38 @@ nav ul.open {
 }
 
 nav ul {
-  position: absolute;
+
   top: 70px;
   left: 0;
   right: 0;
   background-color: #ff7f00;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  display: none;
+
   z-index: 999;
 }
+
 
 @media (max-width: 765px) {
   nav ul {
     flex-direction: column;
     display: none;
   }
-
+  
   nav .menu-icon,
   nav .close-icon {
     display: block;
+  }
+  
+  nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ff7f00;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    z-index: 999;
   }
 }
