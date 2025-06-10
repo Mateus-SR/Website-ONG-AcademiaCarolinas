@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // Animações extras com JS
 // "=>" é só uma forma menor e mais preguiçosa de escrever "function" 
 // (07/06/25) Ainda vou documentar o que isso está fazendo (acredito que nadakkkkk)
+/*
 window.addEventListener('scroll', () => {
   const header = document.querySelectorAll('header');
 
@@ -43,6 +44,7 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+*/
 
 
 /* teste

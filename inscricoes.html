@@ -23,20 +23,29 @@
 
 <body>
   <!-- Header com menu responsivo -->
-  <header class="header">
-    <div class="container">
+  <header id="header">
+    <div class="container-header">
       <nav>
+
         <a href="index.html" class="logo">
           <img src="img/Logo_Carolinas.png" alt="Logo">
         </a>
+
+
         <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Início</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="inscricoes.html">Inscrições</a></li>
           <li><a href="contato.html">Contato</a></li>
-          <li class="close-icon" onclick="closeMenu()"><i class="fa fa-times"></i></li>
+
+
+          <!-- As coisa que chamam o menu-->
+          <li class="close-icon" id="closeMenu">
+            <i class="fa fa-times"></i>
+          </li>
         </ul>
-        <div class="menu-icon" onclick="openMenu()">
+
+        <div class="menu-icon" id="openMenu">
           <i class="fa fa-bars"></i>
         </div>
       </nav>
