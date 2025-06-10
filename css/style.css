@@ -50,39 +50,54 @@ section {
 
 /* Título da seção */
 .section-title {
+  font-family: 'ABeeZee';
+  font-size: 24px;
   text-align: center;
-  color: #ff7f00;
-  margin-bottom: 40px;
+  font-weight: bolder;
+  color: #d90d13;
+
   animation: fadeIn 2s ease;
 }
 
 /* Seção 'Sobre' */
 .about-section {
+
   display: flex;
-  flex-wrap: row;
-  justify-content: center;
   align-items: flex-start;
-
-  text-align: justify;
-  font-size: 20px;
-  text-indent: 50px;
   line-height: 1.4;
-
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  
+  width: 85vw;
   gap: 30px;
-  width: 100%;
+  margin: auto;
 
   animation: fadeInUp 2s ease;
 }
 
 .about-section img {
-  max-width: 500px;
-  width: 100%;
+  max-width: 50vw;
+  max-height: 100%;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.about-section .text {
-  max-width: 600px;
+#tooBig {
+  max-width: 40vw !important;
+  max-height: 100% !important;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .texto {
+  position: sticky;
+  top: 0;
+  font-size: 1.4vw;
+  text-align: justify;
+  text-indent: 50px;
+
+  padding: 30px 15px;
 }
 
 
@@ -144,6 +159,11 @@ img {
 
 img:hover {
   transform: scale(1.03);
+}
+
+iframe {
+  width: 55vw;
+  height: 30vw;
 }
 
 /*  Uma barra divisoria, para o cardapio  

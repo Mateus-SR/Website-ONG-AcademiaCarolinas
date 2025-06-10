@@ -35,8 +35,46 @@
   }
 
 
-  iframe {
+ 
+
+  .about-section {
+
+    display: flex;
+    align-items: center;
+    line-height: 1.4;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    
+    width: 90vw;
+    margin: auto;
+  
+    animation: fadeInUp 2s ease;
+  }
+  
+  .about-section img {
+    max-width: 85vw;
+    max-height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #tooBig {
+    max-width: 70vw !important;
+    max-height: 100% !important;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-section .texto {
+    position: relative;
+    top: 0;
+    font-size: 3vw;
+    text-align: justify;
+    text-indent: 40px;
     width: 85vw;
+  
+    padding: 10px 15px;
   }
 }
 
