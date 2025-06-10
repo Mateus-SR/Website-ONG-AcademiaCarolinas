@@ -32,14 +32,27 @@ document.addEventListener('DOMContentLoaded', function () {
 // "=>" é só uma forma menor e mais preguiçosa de escrever "function" 
 // (07/06/25) Ainda vou documentar o que isso está fazendo (acredito que nadakkkkk)
 window.addEventListener('scroll', () => {
-  const sections = document.querySelectorAll('section');
+  const header = document.querySelectorAll('header');
 
-  sections.forEach((section) => {
-    const position = section.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight / 1.3;
+  sections.forEach((header) => {
+    const position = header.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 0.3;
 
     if (position < screenPosition) {
-      section.classList.add('animate');
+      section.classList.add('teste');
     }
   });
 });
+
+
+/* teste
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.height = "30%";
+  } else {
+    document.getElementById("header").style.height = "";
+  }
+}
+  */

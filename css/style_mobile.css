@@ -33,4 +33,10 @@
   .divisor {
     display: none;
   }
+
+
+  iframe {
+    width: 85vw;
+  }
 }
+

@@ -7,6 +7,10 @@
 
   Todo código foi levado para um CSS respectivo, para facilitar a manutenção
 */
+.teste {
+  background-color: #000000 !important;
+}
+
 * {
   margin: 0;
   padding: 0;
