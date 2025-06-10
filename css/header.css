@@ -19,9 +19,8 @@ header {
 .container-header {
 }
 
-/*
+*/
+
 .logo {
-  position: relative;
-  height: 150px;
-  width: 150px;
+  width: 20em;
 }
