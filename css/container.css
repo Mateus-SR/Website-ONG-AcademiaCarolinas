@@ -56,8 +56,6 @@
 }
 
 .container-item {
-  position: relative;
-
   display: flex;
   flex: 1 1 25%;
   flex-direction: column;
@@ -66,7 +64,7 @@
 
   min-width: 22em;
   max-width: 40em;
-  height: 20em;
+  min-height: 300px;
 
   padding: 20px 20px 20px 20px;
 
