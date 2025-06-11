@@ -26,8 +26,8 @@
 body {
   margin: 0;
   font-family: 'Comfortaa';
-  background-color: #fff;
-  color: #333;
+  background-color: rgb(252, 248, 246);
+  color: rgb(49, 19, 0);
 }
 
 
@@ -80,14 +80,12 @@ section {
   max-width: 50vw;
   max-height: 100%;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #tooBig {
   max-width: 40vw !important;
   max-height: 100% !important;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-section .texto {
@@ -159,6 +157,7 @@ img {
 
 img:hover {
   transform: scale(1.03);
+  box-shadow: 0 4px 10px #d70c131a;
 }
 
 iframe {

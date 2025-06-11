@@ -22,5 +22,5 @@ header {
 */
 
 .logo {
-  width: 20em;
+  max-width: 125px;
 }
