@@ -60,5 +60,12 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .so-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
 }
 
