@@ -150,7 +150,7 @@ Nada aqui no FAQ, por enquanto, está utilizado */
 /*  Estilo das imagens
     Tudo quanto é imagem tem animação */
 img {
-  max-width: 50%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   transition: all 1s ease;
