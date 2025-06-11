@@ -46,7 +46,19 @@
   }
 
   .logo {
-    max-width: 60px;
+    max-width: 25vh;
+  }
+
+  iframe {
+    width: 85vw;
+    height: 100vw;
+  }
+
+  #texto-rodape {
+    display: flex;
+    font-size: 3vw !important;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
