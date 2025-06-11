@@ -227,7 +227,7 @@ span {
 
 #texto-rodape {
   display: flex;
-  font-size: 1.25vw !important;
+  font-size: 1.25vw;
   flex-direction: column;
   align-items: flex-start;
 }

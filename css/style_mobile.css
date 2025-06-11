@@ -2,40 +2,9 @@
 @media (max-width: 765px) {
 
   /* Seção 'Sobre' */
-  .about-section {
-    display: flex;
-    flex-wrap: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: justify;
-    font-size: 18px;
-    text-indent: 40px;
-    line-height: 1.4;
-
-    gap: 30px;
-    width: 100%;
-
-    animation: fadeInUp 2s ease;
-  }
-
-  .about-section img {
-    max-width: 500px;
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .about-section .text {
-    max-width: 600px;
-  }
-
   .divisor {
     display: none;
   }
-
-
- 
 
   .about-section {
 
@@ -56,14 +25,12 @@
     max-width: 85vw;
     max-height: 100%;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
 
   #tooBig {
     max-width: 70vw !important;
     max-height: 100% !important;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .about-section .texto {
@@ -75,6 +42,23 @@
     width: 85vw;
   
     padding: 10px 15px;
+ 
+  }
+
+  .logo {
+    max-width: 25vh;
+  }
+
+  iframe {
+    width: 85vw;
+    height: 100vw;
+  }
+
+  #texto-rodape {
+    display: flex;
+    font-size: 3vw !important;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
