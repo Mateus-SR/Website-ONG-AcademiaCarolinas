@@ -171,6 +171,10 @@ iframe {
   image-rendering: pixelated;
 }
 
+.so-mobile {
+  display: none;
+}
+
 /*  Uma barra divisoria, para o cardapio  
         Precisa de ajustes na centralização */
 .divisor {
