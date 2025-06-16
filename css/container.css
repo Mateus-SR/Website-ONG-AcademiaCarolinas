@@ -89,6 +89,24 @@
   transition: all 0.3s ease;
 }
 
+.container-prestacon {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  min-width: 20em;
+
+  border-radius: 25px;
+  padding: 30px;
+
+  background-color: white;
+
+  transition: all 0.3s ease;
+}
+
 /*  Apenas um teste 
   #container-item-curso {
     position: relative;
