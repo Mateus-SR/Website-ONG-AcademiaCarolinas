@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cursos - Academia Carolina</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Dobradura Academia Carolinas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_mobile.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style_mobile.css">
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/container.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/form.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-
-
 </head>
-
 <body>
-  <!-- Header com menu responsivo -->
+     <!-- Header com menu responsivo -->
   <header id="header">
     <div class="container-header">
       <nav>
@@ -37,8 +33,9 @@
           <li><a href="sobre.html">Sobre nós</a></li>
           <li><a href="inscricoes.html">Cursos</a></li>
           <li><a href="voluntariado.html">Voluntariado</a></li>
-           <li><a href="PrestarContas.html">Prestação de Contas</a></li>
-           
+          <li><a href="PrestarContas.html">Prestação de Contas</a></li>
+
+
           <!-- As coisa que chamam o menu-->
           <li class="close-icon" id="closeMenu">
             <i class="fa fa-times"></i>
@@ -52,65 +49,41 @@
     </div>
   </header>
 
-  <!--  Para fazer:
-        Trazer de volta a mensagem de "Estamos prontos para te ouvir" -->
-
-  <!-- Esse aqui é um placeholder por enquanto -->
-  <section class="container-cardapio-geral">
-
-  <div class="container-cardapio-solo">
-
-    <div class="container-item">
-      <div class="container-cardapio-titulo">
-        <i class="fas fa-book-reader" style="font-size: 30px; margin-right: 20px;"></i>Conheça nossos cursos
+  
+  <main class="container">
+    <h1 class="section-title">Curso de Dobradura</h1>
+    <section class="about-section">
+      <img src="img/Voluntários.jpeg" alt="ONG em ação">
+      <div class="texto">
+        <p>Na Academia Carolinas, acreditamos que a dobradura (origami) é uma arte fascinante que 
+            estimula a criatividade e a concentração! Nosso curso de dobradura foi especialmente criado 
+            para crianças carentes, oferecendo a elas a oportunidade de explorar o mundo do papel, 
+            desenvolver a coordenação motora e soltar a imaginação.</p>
+        <br>
+        <p>Seu filho terá a chance de aprender a transformar simples folhas de papel em
+             incríveis figuras: de animais a flores, de aviões a objetos decorativos. 
+             Nossas aulas são conduzidas por instrutores pacientes e criativos, que guiarão 
+             cada criança passo a passo, incentivando a precisão, a paciência e a alegria 
+             de ver suas criações ganharem forma.
+        </p>
       </div>
+    </section>
 
-      <h1 class="container-cardapio-subtitulo"><a href="artes.html">Artes</a></h1>
-      <h1 class="container-cardapio-subtitulo"><a href="capoeira.html">Capoeira</a></h1>
-      <h1 class="container-cardapio-subtitulo"><a href="dobradura.html">Dobradura/Origami</a></h1>
-      <h1 class="container-cardapio-subtitulo"><a href="edfisica.html">Educação Física</a></h1>
-      <h1 class="container-cardapio-subtitulo"><a href="historia.html">História e Ancestralidade</a></h1>
-      <h1 class="container-cardapio-subtitulo"><a href="informatica.html">Informática</a></h1>
-      <h1 class="container-cardapio-subtitulo"><a href="leitura.html">Leitura</a></h1>
-      <h1 class="container-cardapio-subtitulo"><a href="mercadotrabalho.html">Mercado de trabalho para adolescentes</a></h1>
-      <h1 class="container-cardapio-subtitulo"><a href="reforcoescolar.html">Reforço Escolar</a></h1>
-    </div>
-
-    <div class="divisor"></div>
-
-    <div class="container-item">
-      <div class="container-cardapio-titulo">
-        <i class="fa fa-user-circle" style="font-size: 30px; margin-right: 20px;"></i>Inscreva-se em nossas atividades
+    <section class="about-section">
+      <div class="texto">
+        <p>Mais do que apenas ensinar a dobrar papel, o curso de dobradura da Academia Carolinas busca promover
+          o desenvolvimento integral das crianças. Acreditamos que a capoeira é uma ferramenta poderosa para:</p>
+          <ul>- Estimular a criatividade e a imaginação.</ul>
+          <ul>- Aprimorar a coordenação motora fina e a destreza manual.</ul>
+          <ul>- Desenvolver a concentração, a paciência e a persistência.</ul>
+          <ul>- Fortalecer a capacidade de seguir instruções e resolver problemas.</ul>
+          <ul>- Proporcionar momentos de relaxamento e satisfação ao ver o resultado final.</ul>
+        <br>
+        <p>Quer conhecer mais? Visite-nos ou entre em contato para agendar uma visita!</p>
       </div>
-
-      <form action="#" method="post" class="form-box">
-        <label for="nome">Nome completo:</label>
-        <input type="text" id="nome" name="nome" required>
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="atividade">Escolha a Atividade:</label>
-        <select id="atividade" name="atividade" required>
-          <option value="">-- Selecione --</option>
-          <option value="reforco">Reforço Escolar</option>
-          <option value="oficina">Oficina de Arte</option>
-          <option value="esporte">Esporte e Recreação</option>
-          <option value="reforco">Reforço Escolar</option>
-          <option value="oficina">Oficina de Arte</option>
-          <option value="esporte">Esporte e Recreação</option>
-          <option value="reforco">Reforço Escolar</option>
-          <option value="oficina">Oficina de Arte</option>
-          <option value="esporte">Esporte e Recreação</option>
-        </select>
-
-        <button type="submit" class="btn animate-btn">Enviar Inscrição</button>
-      </form>
-    </div>
-
-  </div>
-
-</section>
+      <img src="img/inauguração rede cozinha escola 2023.jpeg" alt="Projeto social da ONG" id="tooBig">
+    </section>
+  </main>
 
 
 
@@ -118,6 +91,7 @@
 
       Essa quantidade absurda de span serve para que a animação legal funcione do jeito certo
       (cada span é uma "borda")-->
+      
       <footer class="footer container-cardapio-geral">
         <div class="container-footer-geral">
           <div class="testeanim"><img src="img/teste.png"></div>
@@ -154,7 +128,7 @@
                 </a>
               </div>
             </div>
-          </div>
+        </div>
     
           <div class="container-footer-coluna">
             <div class="container-cardapio-titulo" style="background-color: #d70c13">Entre em contato</div>
@@ -177,6 +151,7 @@
     
 
   <script src="js/main.js"></script>
-</body>
+    
 
+</body>
 </html>
