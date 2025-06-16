@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prestação de contas</title>
+    <title>Prestação de contas - Academia Carolinas</title>
 
-     <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_mobile.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/header.css">
@@ -18,26 +18,34 @@
 </head>
 <body>
     
-    <header class="header">
-    <div class="container">
+  <header id="header">
+    <div class="container-header">
       <nav>
+
         <a href="index.html" class="logo">
           <img src="img/Logo_Carolinas.png" alt="Logo">
         </a>
+
+
         <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="inscricoes.html">Inscrições</a></li>
-          <li><a href="contato.html">Contato</a></li>
-          <li><a href="PrestarContas.html">Prestação de Contas</a></li>
-          <li class="close-icon" onclick="closeMenu()"><i class="fa fa-times"></i></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="inscricoes.html">Cursos</a></li>
+          <li><a href="voluntariado.html">Voluntariado</a></li>
+           <li><a href="PrestarContas.html">Prestação de Contas</a></li>
+           
+          <!-- As coisa que chamam o menu-->
+          <li class="close-icon" id="closeMenu">
+            <i class="fa fa-times"></i>
+          </li>
         </ul>
-        <div class="menu-icon" onclick="openMenu()">
+
+        <div class="menu-icon" id="openMenu">
           <i class="fa fa-bars"></i>
         </div>
       </nav>
     </div>
-    </header>
+  </header>
 
 
     
@@ -49,41 +57,65 @@
 
       Essa quantidade absurda de span serve para que a animação legal funcione do jeito certo
       (cada span é uma "borda")-->
-  <footer class="footer">
-    <div class="icons">
-      <a class="b" href="https://www.tiktok.com/@jornal.etecabh?_t=8ohPkYfsYr7&_r=1">
-        <div class="layer">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span class="fa-brands fa-tiktok"></span>
+      <footer class="footer container-cardapio-geral">
+        <div class="container-footer-geral">
+          <div class="testeanim"><img src="img/teste.png"></div>
+    
+          <div class="container-footer-linha">
+            <div class="container-cardapio-titulo" style="background-color: #d70c13">Nossas redes sociais</div>
+    
+            <div class="footer-social">
+              <div>
+                <a href="https://www.instagram.com/academiacarolinas/" target="_blank" class="footer-link">
+                  <img src="img/Logo_Carolinas.png" class="icone">
+                  <i class="fab fa-instagram icone-mini"></i>
+                  <p>Academia Carolinas</p>
+                </a>
+              </div>
+            </div>
+    
+            <div class="footer-social">
+              <div>
+                <a href="https://www.instagram.com/carolinasorganicos/" target="_blank" class="footer-link">
+                  <img src="img/CarolinasOrganicos.jpg" class="icone">
+                  <i class="fab fa-instagram icone-mini"></i>
+                  <p>Carolinas Orgânicos</p>
+                </a>
+              </div>
+            </div>
+    
+            <div class="footer-social">
+              <div>
+                <a href="https://www.instagram.com/redecozinhaescola/" target="_blank" class="footer-link">
+                  <img src="img/CozinhaEscola.jpg" class="icone">
+                  <i class="fab fa-instagram icone-mini"></i>
+                  <p>Rede Cozinha Escola</p>
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="container-footer-coluna">
+            <div class="container-cardapio-titulo" style="background-color: #d70c13">Entre em contato</div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.038547573406!2d-46.41330349999999!3d-23.567059000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce65962e4924df%3A0xff898def00a0aa1f!2sAv.%20Souza%20Ramos%2C%20431%20-%20Guaianases%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008490-490!5e0!3m2!1spt-BR!2sbr!4v1750037127454!5m2!1spt-BR!2sbr"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="container-texto" id="texto-rodape">
+              <p><strong>Endereço:</strong> Av. Souza Ramos, 431, São Paulo-SP, Brazil 08490-490</p>
+              <p><strong>Telefone:</strong> (11) 90000-0000</p>
+              <p><strong>Email:</strong> www.@gmail.com</p>
+            </div>
+          </div>
+    
         </div>
-        <div class="text">Tiktok</div>
-      </a>
-      <a class="b" href="https://www.instagram.com/etecabh?igsh=OXZ2MHNhdWd6Z2hq">
-        <div class="layer">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span class="fa-brands fa-instagram"></span>
-        </div>
-        <div class="text">Instagram</div>
-      </a>
-      <a class="b" href="https://www.facebook.com/etechemeritas?mibextid=ZbWKwL">
-        <div class="layer">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span class="fa-brands fa-facebook"></span>
-        </div>
-        <div class="text">Facebook</div>
-      </a>
-    </div>
-    <p>Desenvolvido por Geppetto Company Ltda.</p>
-  </footer>
-  <script src="js/main.js"></script>
+    
+        <p id="copyright">Desenvolvido por Geppetto Company Ltda.</p>
+    
+    
+      </footer>
+    
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>

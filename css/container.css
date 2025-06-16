@@ -32,8 +32,20 @@
   
   padding: 20px 20px 20px 20px;
   gap: 10px;
+}
 
-  transition: all 0.3s ease;
+.container-footer-linha {
+  display: flex;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: space-evenly;
+
+  width: 68vw;
+
+  margin-bottom: 10px;
 }
 
 .container-cardapio-solo {
