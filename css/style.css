@@ -175,6 +175,17 @@ iframe {
   display: none;
 }
 
+.texto a {
+  color: #ff7f00;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.25em;
+  line-height: 30px;
+}
+
+.texto a:hover {
+  color: #d90c13;
+}
 /*  Uma barra divisoria, para o cardapio  
         Precisa de ajustes na centralização */
 .divisor {
