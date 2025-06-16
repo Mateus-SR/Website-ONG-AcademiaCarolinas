@@ -186,6 +186,18 @@ iframe {
 .texto a:hover {
   color: #d90c13;
 }
+
+.container-item a {
+  color: #ffffff;
+  font-weight: bold;
+
+  font-size: 1.25em;
+  line-height: 30px;
+}
+
+.container-item a:hover {
+  color: #d90c13;
+}
 /*  Uma barra divisoria, para o cardapio  
         Precisa de ajustes na centralização */
 .divisor {
